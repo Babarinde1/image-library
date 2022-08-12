@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>pro</title>
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="w3-container"><p></p>
+
+<!--row-->
+<div class="w3-row-padding">
+<!--1-->
+<div class="w3-col s3 w3-container">
+<a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Autum');">
+<img src="autum.jpg" alt="Snow" style="width:100%">
+</a></div>
+<!--2-->
+<div class="w3-col s3 w3-container">
+<a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Bridge');">
+<img src="bridge.jpg" alt="Bridge" style="width:100%">
+</a></div>
+<!--3-->
+<div class="w3-col s3 w3-container">
+<a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Deers');">
+<img src="deers.jpg" alt="Deers" style="width:100%">
+</a></div>
+<!--4-->
+<div class="w3-col s3 w3-container">
+<a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Rose');">
+<img src="rose.jpg" alt="Rose" style="width:100%">
+</a></div>
+
+</div><br>
+
+<div id="Autum" class="picture w3-display-container"
+style="display:none"><img src="autum.jpg" alt="Autum" style="width:100%"><span onclick="this.parentElement.style.display='none'"
+ class="w3-display-topright w3-button w3-hover-none w3-transparent w3-text-white">&times;</span>
+<div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Autum
+</div>
+</div>
+
+<div id="Bridge" class="picture w3-display-container"
+style="display:none"><img src="bridge.jpg" alt="Bridge" style="width:100%"><span onclick="this.parentElement.style.display='none'"
+ class="w3-display-topright w3-button w3-hover-none w3-transparent w3-text-grey">&times;</span>
+<div class="w3-display-bottomleft w3-container w3-padding w3-text-black">Bridge</div>
+</div>
+
+<div id="Deers" class="picture w3-display-container"
+style="display:none"><img src="deers.jpg" alt="Deers" style="width:100%"><span onclick="this.parentElement.style.display='none'"
+ class="w3-display-topright w3-button w3-hover-none w3-transparent w3-text-white">&times;</span>
+<div class="w3-display-bottomleft w3-container w3-padding w3-text-black">Deers</div>
+</div>
+
+<div id="Rose" class="picture w3-display-container"
+style="display:none"><img src="rose.jpg" alt="Rose" style="width:100%"><span onclick="this.parentElement.style.display='none'"
+ class="w3-display-topright w3-button w3-hover-none w3-transparent w3-text-white">&times;</span>
+<div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Rose</div>
+</div>
+
+</div>
+<script>
+function openImg(imgName){
+  var i, x;
+  x = document.getElementsByClassName("picture");
+  for(i=0;i<x.length;i++){
+    x[i].style.display="none";
+  }
+  document.getElementById(imgName).style.display="block";
+}
+
+
+</script>
+</body>
+</html>
